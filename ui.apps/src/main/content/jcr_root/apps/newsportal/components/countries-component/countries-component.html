@@ -1,0 +1,10 @@
+<div data-sly-use.country="com.alchemy.newsportal.core.models.Countries">
+
+    <select>
+        <option value="">Select a country</option>
+        <sly data-sly-list.country="${country.countries}">
+            <option value="${country}">${country}</option>
+        </sly>
+    </select>
+
+</div>

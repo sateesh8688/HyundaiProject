@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Media">
+    <content jcr:primaryType="cq:EditConfig">
+        <cq:inplaceEditing
+            jcr:primaryType="cq:InplaceEditingConfig"
+            active="true"/>
+    </content>
+    <items jcr:primaryType="cq:WidgetCollection">
+        <media
+            jcr:primaryType="cq:Widget"
+            allowUpload="true"
+            fieldLabel="Media"
+            mimeTypes="[image/*, video/*]"
+            name="./media"
+            xtype="html5smartfile"/>
+    </items>
+</jcr:root>

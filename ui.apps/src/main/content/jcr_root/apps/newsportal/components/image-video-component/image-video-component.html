@@ -1,0 +1,8 @@
+<div data-sly-use.component="com.alchemy.newsportal.core.models.ImageVideoComponent">
+    <img data-sly-test="${component.image}" src="${component.image @ extension='jpg'}" alt="Image">
+    <div>
+    <video data-sly-test="${component.video}" controls  style="height: 350px;">
+        <source data-sly-attribute.src="${component.video}" type="video/mp4">
+    </video>
+     </div>
+</div>
